@@ -114,19 +114,20 @@ public int distributeReplicastoPeers() throws RemoteException {
 
 		this.filename = filename;
 		activeNodesforFile = new HashSet<Message>(); 
+    	createReplicaFiles();  
 
-		// Task: Given a filename, find all the peers that hold a copy of this file
-		
-		// generate the N replicas from the filename by calling createReplicaFiles()
-		
-		// iterate over the replicas of the file
-		
-		// for each replica, do findSuccessor(replica) that returns successor s.
-		
-		// get the metadata (Message) of the replica from the successor (i.e., active peer) of the file
-		
-		// save the metadata in the set activeNodesforFile.
-		
+		for (int i = 0; i < numReplicas; i++) {
+			BigInteger replicaID = replicafiles[i];
+			NodeInterface s = chordnode.findSuccessor(replicaID);
+			if (s != null) {
+				Message message = s.getFilesMetadata(replicaID);
+				if (message != null) {
+					activeNodesforFile.add(message);
+				}
+			}
+
+		}
+
 		return activeNodesforFile;
 	}
 	
