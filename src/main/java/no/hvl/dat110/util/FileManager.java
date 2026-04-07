@@ -82,7 +82,6 @@ public int distributeReplicastoPeers() throws RemoteException {
 
     Random rnd = new Random();
     int primaryIndex = rnd.nextInt(numReplicas-1);  
-
     int counter = 0;
 
     createReplicaFiles();  
@@ -136,17 +135,15 @@ public int distributeReplicastoPeers() throws RemoteException {
 	 * @return 
 	 */
 	public NodeInterface findPrimaryOfItem() {
-
-		// Task: Given all the active peers of a file (activeNodesforFile()), find which is holding the primary copy
-		
-		// iterate over the activeNodesforFile
-		
-		// for each active peer (saved as Message)
-		
-		// use the primaryServer boolean variable contained in the Message class to check if it is the primary or not
-		
-		// return the primary when found (i.e., use Util.getProcessStub to get the stub and return it)
-		
+		for (Message peers : activeNodesforFile) {
+			if (peers != null) {
+				if (peers.isPrimaryServer()) {
+					String nodename = peers.getNodeName();
+					int port = peers.getPort();
+					return Util.getProcessStub(nodename, port);
+				}
+			}
+		}
 		return null; 
 	}
 	
