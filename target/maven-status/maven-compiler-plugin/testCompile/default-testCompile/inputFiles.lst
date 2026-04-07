@@ -1,0 +1,11 @@
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/SetUp.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestCheckInterval.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestFilePeers.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestFileReplicas.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestFindSuccessor.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestFingerTable.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestHashFunction.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestKeys.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestMutex.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestRemote.java
+/home/greyfax/dat110-project3-group-17/src/test/java/no/hvl/dat110/unit/tests/TestRing.java
