@@ -1,3 +1,6 @@
+<img width="1720" height="736" alt="image" src="https://github.com/user-attachments/assets/a201010a-3df6-444c-a7f3-2a8496300b89" />
+
+
 ### Project 3 - Weeks 12 to 15: 17/03 - 14/04
 
 ### DHT Cooperative Mirroring with Consistency Protocol and Distributed Mutual Exclusion.
